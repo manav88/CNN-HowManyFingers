@@ -69,7 +69,7 @@ def main():
         roi = frame[y0:y0+width,x0:x0+width]
         roi = binaryMask(roi)
 
-        # apply processed roi in frame
+        # apply processed ROI in frame
         if showMask:
             window[y0:y0+width,x0:x0+width] = cv2.cvtColor(roi, cv2.COLOR_GRAY2BGR)
 
